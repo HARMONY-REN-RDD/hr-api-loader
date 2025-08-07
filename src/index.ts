@@ -76,9 +76,6 @@ export default ApiLoader;
 async function main() {
   const loader = new ApiLoader();
   console.log(loader.methods);
-
-  const result = loader.call('1', 'user-welf');
-  console.log(result);
 }
 
-main();
+// main();
