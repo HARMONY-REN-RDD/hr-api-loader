@@ -1,0 +1,30 @@
+{
+  "name": "hr-api-loader-ts",
+  "version": "1.0.0",
+  "description": "TypeScript-based HR API loader library.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepare": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HARMONYREN-RD-DEPARTMENT/hr-api-loader.git"
+  },
+  "author": "kai5041",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HARMONYREN-RD-DEPARTMENT/hr-api-loader/issues"
+  },
+  "homepage": "https://github.com/HARMONYREN-RD-DEPARTMENT/hr-api-loader#readme",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "typescript": "^5.4.5"
+  }
+}
