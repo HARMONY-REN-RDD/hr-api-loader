@@ -46,7 +46,7 @@ class ApiLoader {
       if (stat.isDirectory()) {
         // Recurse into subdirectory with updated path_parts
         this.load_methods_recursively(full_path, method_map, [...path_parts, entry]);
-      } else if (stat.isFile()) {
+      } else if (stat.isFile() && entry.endsWith('.js') ) {
         const filename = path.parse(entry).name;
 
         // Combine path parts and filename with dashes
