@@ -40,7 +40,7 @@ class ApiLoader {
         const filename = path.parse(entry).name;
         const method_key = [...path_parts, filename].join('-');
         try {
-          const mod = require(full_path);
+          const mod = await import(full_path);
           const fn = mod.default || mod;
           method_map[method_key] = fn;
         } catch (e) {
