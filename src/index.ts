@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs";
-import { MethodNotFoundError, VersionNotSupportedError } from "./error";
+import { MethodNotFoundError, VersionNotSupportedError } from "./error.js";
 
 type MethodMap = {
   [key: string]: (...args: any[]) => any;
