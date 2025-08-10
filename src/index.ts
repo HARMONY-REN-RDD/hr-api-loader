@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs";
-import { MethodNotFoundError, VersionNotSupportedError } from "./error.js";
+import { MethodNotFoundError, VersionNotSupportedError } from "./error";
 
 type MethodMap = {
   [key: string]: (...args: any[]) => any;
@@ -62,6 +62,7 @@ export default ApiLoader;
 async function main() {
   const loader = new ApiLoader();
   await loader.init();
+  loader.call('1', 'auth-test');
   console.log(loader.methods);
 }
 
