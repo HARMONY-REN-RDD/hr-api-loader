@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "clean": "rm -rf dist",
     "prepare": "npm run clean && npm run build"
   },
