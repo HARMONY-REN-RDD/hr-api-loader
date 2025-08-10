@@ -65,4 +65,4 @@ async function main() {
   console.log(loader.methods);
 }
 
-main();
+// main();
